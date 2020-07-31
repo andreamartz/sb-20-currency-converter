@@ -77,10 +77,17 @@ Answer the following questions below:
 
     In the view function for the route, get the query data using request.args.  'request' is an object provided by Flask that contains the data from web requests.
     ```
-    request.args.get("param")
+    request.args.get("name_of_variable")
     ```
 
 - How do you collect data from the body of the request using Flask?
+
+    Start by importing Flask and request from flask (see above).
+
+    In the view function for the route with method POST, get the data using request.form.
+    ```
+    request.form.get("name_of_variable")
+    ```
 
 - What is a cookie and what kinds of things are they commonly used for?
 
