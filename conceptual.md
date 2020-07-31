@@ -38,6 +38,8 @@ Answer the following questions below:
 
 - What is a unit test?
 
+    A unit test tests a small piece of functionality in isolation from other pieces of functionality.  For example, a unit test might verify that the value returned from a function is what we expect it to be, given specific arguments.
+
 - What is an integration test?
 
 - What is the role of web application framework, like Flask?
