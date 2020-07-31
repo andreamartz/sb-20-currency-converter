@@ -59,7 +59,26 @@ Answer the following questions below:
 
 - How do you collect data from a URL placeholder parameter using Flask?
 
+    Of course, we start by importing Flask from flask:
+
+    ```
+    from flask import Flask
+    ```
+
+    Create a route with the variable (placeholder parameter) in the path wrapped in pointed brackets (<>).  Then, pass the same variable to the view function for that route (but without the brackets).
+
+
 - How do you collect data from the query string using Flask?
+
+    Start by importing Flask and request from flask:
+    ```
+    from flask import Flask, request
+    ```
+
+    In the view function for the route, get the query data using request.args.  'request' is an object provided by Flask that contains the data from web requests.
+    ```
+    request.args.get("param")
+    ```
 
 - How do you collect data from the body of the request using Flask?
 
