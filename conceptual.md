@@ -42,6 +42,8 @@ Answer the following questions below:
 
 - What is an integration test?
 
+    An integration test verifies that the units, or individual pieces of code that can be unit tested, are also working _together_ correctly.
+
 - What is the role of web application framework, like Flask?
 
 - You can pass information to Flask either as a parameter in a route URL
