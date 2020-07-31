@@ -98,3 +98,9 @@ Answer the following questions below:
 - What is the session object in Flask?
 
 - What does Flask's `jsonify()` do?
+
+    `jsonify()` takes some input that can clearly be turned into JSON format (in Python, that would be lists and dictionaries) and makes that translation.  This method will also return a response header showing:
+    ```
+    Content-Type: application/json
+    ```
+    Without `jsonify()`, we could return a string of valid JSON, but the browser would not recognize it as such, because the response header would still report a content type of `text/html`.
