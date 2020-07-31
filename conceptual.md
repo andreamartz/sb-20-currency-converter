@@ -51,6 +51,10 @@ Answer the following questions below:
   'foods?type=pretzel'). How might you choose which one is a better fit
   for an application?
 
+    Passing the information as a resource in the URL is appropriate when there is a view devoted to the content described by that parameter.
+
+    Passing it as part of a query string would be appropriate if the parameter was more of a modifier to get more specific information about the page content than would otherwise be displayed.
+
 - How do you collect data from a URL placeholder parameter using Flask?
 
 - How do you collect data from the query string using Flask?
