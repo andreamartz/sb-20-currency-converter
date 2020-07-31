@@ -46,6 +46,8 @@ Answer the following questions below:
 
 - What is the role of web application framework, like Flask?
 
+    Building a web server and setting up routes to respond to requests all from scratch involves a lot of code, and it is very time-consuming.  A web framework can greatly speed up the process by making some decisions for us and taking care of setting up those pieces.  It provides us with functions and classes and other tools that we use out of the box without having to write them ourselves.
+
 - You can pass information to Flask either as a parameter in a route URL
   (like '/foods/pretzel') or using a URL query param (like
   'foods?type=pretzel'). How might you choose which one is a better fit
