@@ -57,6 +57,10 @@ Answer the following questions below:
 
 - What is a cookie and what kinds of things are they commonly used for?
 
+    A cookie stores small bits of information in the client's browser.  It's a way to save state, since HTTP is a stateless protocol.
+
+    Cookies can be used in countless ways.  A cookie can store a user's id, the items in their shopping cart, the time spent on a page, what ads the user has viewed, or some other small bit of information.
+
 - What is the session object in Flask?
 
 - What does Flask's `jsonify()` do?
