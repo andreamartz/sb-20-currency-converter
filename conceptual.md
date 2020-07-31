@@ -22,6 +22,20 @@ Answer the following questions below:
   can try to get a missing key (like "c") *without* your programming
   crashing.
 
+    1. dict_name.get['c']
+    2. Use a try/except block like this:
+    ```
+    try:
+        print(dict_name['c'])
+    except KeyError:
+        print("'c' is not a key in dict_name")
+    ```
+    3. Use an if block like this:
+    ```
+    if dict_name['c']:
+        print(dict_name['c'])
+    ```
+
 - What is a unit test?
 
 - What is an integration test?
