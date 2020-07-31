@@ -4,6 +4,20 @@ Answer the following questions below:
 
 - What are important differences between Python and JavaScript?
 
+    1. Python has official documentation.  JS has very good documentation (MDN is one example), but there's no official documentation source.
+
+    2. Python has to be installed on a machine before it can be used.  With JS, there's nothing to install.
+
+    3. Python has hard releases, and users can use different versions in different virtual environments.  JS releases new features but not new versions.
+
+    4. Python2 is not compatible with Python3. Since JavaScript doesn't have hard releases, there is no direct equivalent in JS.  Features will sometimes be deprecated and then removed entirely from the language, though.
+
+    5. Python does not have type coercion; JS does.  For example, '1' + 3 = 13 in JS, but '1' + 3 results in an error in Python.
+
+    6. Python generates many more errors than JS does.
+
+    7. Python relies on proper indentation to define code blocks; JS uses curly braces ({}).
+
 - Given a dictionary like ``{"a": 1, "b": 2}``: , list two ways you
   can try to get a missing key (like "c") *without* your programming
   crashing.
