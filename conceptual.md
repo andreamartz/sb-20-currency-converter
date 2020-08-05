@@ -97,6 +97,8 @@ Answer the following questions below:
 
 - What is the session object in Flask?
 
+    The session object is built on cookies, and it provides an easier way for developers to access the data stored in cookies.  The session is a dictionary-like object.
+
 - What does Flask's `jsonify()` do?
 
     `jsonify()` takes some input that can clearly be turned into JSON format (in Python, that would be lists and dictionaries) and makes that translation.  This method will also return a response header showing:
