@@ -9,3 +9,7 @@ app.config['TESTING'] = True
 app.config['DEBUG_TB_HOSTS'] = ['dont-show-debug-toolbar']
 
 
+class ConvertCurrencyTestCase(TestCase):
+    """Unit tests on forex-python currency conversion"""
+
+    def test_show_convert_form(self):
