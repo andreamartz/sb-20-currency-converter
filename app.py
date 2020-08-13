@@ -48,3 +48,15 @@ def convert_currency():
         return redirect('/')
 
 
+@app.route('/conversion-result')
+def display_result():
+    """Convert the amount given to the new currency."""
+    from_curr = session['from_curr']
+    to_curr = session['to_curr']
+    amount = session['amount']
+    symbol = session['symbol']
+
+    raw_conversion = rates.convert(from_curr, to_curr, Decimal(amount))
+    rounded_conv = round(raw_conversion, 2)
+
+    return render_template('conversion-result.html', symbol=symbol, conversion=rounded_conv)
