@@ -19,3 +19,32 @@ def show_convert_form():
     return render_template('index.html')
 
 
+@app.route('/convert')
+def convert_currency():
+    """Convert the amount given into the new currency."""
+    from_curr = request.args.get("convert-from").upper()
+    to_curr = request.args.get("convert-to").upper()
+    amount = request.args.get("amount")
+
+    session['from_curr'] = from_curr
+    session['to_curr'] = to_curr
+    session['amount'] = amount
+
+    try:
+        result = convert(from_curr, to_curr, amount)
+        session['symbol'] = result["symbol"]
+        raw_conversion = result["raw_conversion"]
+
+        return redirect('/conversion-result')
+        # is it possible to send variables on a redirect?
+
+    except:
+        if codes.get_symbol(from_curr) == None:
+            flash(f"Not a valid currency: {from_curr}", "error")
+        if codes.get_symbol(to_curr) == None:
+            flash(f"Not a valid currency: {to_curr}", "error")
+        if float(amount) < 0:
+            flash(f"Not a valid amount.", "error")
+        return redirect('/')
+
+
