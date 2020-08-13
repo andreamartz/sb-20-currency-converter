@@ -6,3 +6,12 @@ from decimal import Decimal
 import convert
 
 
+app = Flask(__name__)
+app.config['SECRET_KEY'] = "never-tell!"
+rates = CurrencyRates()
+codes = CurrencyCodes()
+# should I be storing rates and codes in the session?
+# is it possible to store these in the session outside of a route?
+debug = DebugToolbarExtension(app)
+
+
