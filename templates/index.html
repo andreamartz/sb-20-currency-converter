@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Forex Converter{% endblock %}
+{% block content%}
+<h1>Forex Converter</h1>
+<!-- <form action="/conversion-result" method=""> -->
+<form action="/convert">
+  <label for="convert-from">Converting from: </label>
+  <br>
+  <input type="text" id="convert-from" name="convert-from">
+  <br>
+  <label for="convert-to">Converting to: </label>
+  <br>
+  <input type="text" id="convert-to" name="convert-to">
+  <br>
+  <label for="amount">Amount: </label>
+  <br>
+  <input type="number" id="amount" name="amount">
+  <br>
+  <button>Convert</button>
+</form>
+{% endblock %}
