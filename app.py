@@ -36,7 +36,6 @@ def convert_currency():
         raw_conversion = result["raw_conversion"]
 
         return redirect('/conversion-result')
-        # is it possible to send variables on a redirect?
 
     except:
         if codes.get_symbol(from_curr) == None:
