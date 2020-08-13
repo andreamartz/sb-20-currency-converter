@@ -15,3 +15,9 @@ codes = CurrencyCodes()
 debug = DebugToolbarExtension(app)
 
 
+@app.route('/')
+def show_convert_form():
+    """Show the form to input conversion info."""
+    return render_template('index.html')
+
+
